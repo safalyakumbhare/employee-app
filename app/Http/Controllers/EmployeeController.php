@@ -22,11 +22,14 @@ class EmployeeController extends Controller
        //dd($request->all());
 
          //Validate the incoming request data
-        //  $request ->validate([
-        //     'title' => 'required|string| max:255 ',
-
-        //     'content' => 'required |string',
-        //  ]);
+         $request ->validate([
+            'fname' => 'required|string| max:255 ',
+            'email' => 'required|string| max:255',
+            'contact' => 'required |string | max:10',
+            'dob' => 'required|string',
+            'address' => 'required|string',
+            'yoe' => 'required|integer',
+         ]);
 
 
 
